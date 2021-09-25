@@ -1,0 +1,62 @@
+﻿<header class="navbar navbar-expand-md navbar-dark d-none d-lg-flex d-print-none">
+    <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav flex-row order-md-last">
+            <div class="nav-item dropdown d-none d-md-flex me-3">
+
+                <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+
+                    <Icon class="icon" Elements=@Icons.Bell />
+                    <span class="badge bg-red"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-card">
+                    <div class="card">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet consectetur exercitationem fugiat in ipsa ipsum, natus odio quidem quod repudiandae sapiente. Amet debitis et magni maxime necessitatibus ullam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="nav-item">
+            <Dropdown >
+                <ChildContent>
+                    <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                        <Avatar Url="images/001m.jpg" Size=AvatarSize.Small />
+                        <div class="d-none d-xl-block ps-2">
+                            <div>John Doe</div>
+                            <div class="mt-1 small text-muted">TabBlazor Expert</div>
+                        </div>
+                    </a>
+                </ChildContent>
+
+                <DropdownTemplate>
+                    <DropdownMenu>
+                        <DropdownItem>Set status</DropdownItem>
+                        <DropdownItem>Profile &amp; account</DropdownItem>
+                        <DropdownItem>Feedback</DropdownItem>
+                         <div class="dropdown-divider"></div>
+                          <DropdownItem>Settings</DropdownItem>
+                           <DropdownItem>Logout</DropdownItem>
+                    </DropdownMenu>
+                </DropdownTemplate>
+            </Dropdown>
+            </span>
+           
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <div>
+
+                <div class="input-icon">
+                    <span class="input-icon-addon">
+                        <Icon class="icon" Elements=@Icons.Search />
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search…" aria-label="Search in website">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
