@@ -1,0 +1,45 @@
+﻿
+
+<Badge class="mt-2 mb-2" BackgroundColor="TablerColor.Primary">I'm a Badge</Badge>
+
+<ItemSelect Label="Select Customer" Items="customers" TItem="Customer" TValue="Customer" SelectedTextExpression="e=>e.Name">
+    <ListTemplate>@context.Name</ListTemplate>
+</ItemSelect>
+
+<div class="mt-2">
+    <Table Item="Customer" Items=customers>
+        <HeaderTemplate>
+            <h3>Customers</h3>
+        </HeaderTemplate>
+        <ChildContent>
+            <Column Item="Customer" Property="e=>e.Name" Sortable Searchable />
+            <Column Item="Customer" Property="e=>e.NumberOfOrders" Sortable Searchable />
+            <Column Item="Customer" Property="e=>e.Country" Sortable Searchable />
+        </ChildContent>
+    </Table>
+</div>
+
+@code {
+    private List<Customer> customers = new();
+
+    protected override void OnInitialized()
+    {
+        PopulateCustomers();
+    }
+
+    private void PopulateCustomers()
+    {
+        customers.Add(new Customer { Name = "Sentry Inc", NumberOfOrders = 123, Country = "USA" });
+        customers.Add(new Customer { Name = "Developer AB", NumberOfOrders = 12, Country = "Sweden" });
+        customers.Add(new Customer { Name = "Constructive Tec", NumberOfOrders = 55, Country = "USA" });
+
+    }
+
+    private class Customer
+    {
+        public string Name { get; set; }
+        public int NumberOfOrders { get; set; }
+        public string Country { get; set; }
+    }
+
+}
