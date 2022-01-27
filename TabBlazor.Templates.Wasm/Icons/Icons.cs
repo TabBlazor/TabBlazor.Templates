@@ -1,4 +1,4 @@
-﻿namespace TabBlazor.Templates.Server
+﻿namespace TabBlazor.Templates.Wasm
 {
     public static class Icons
     {

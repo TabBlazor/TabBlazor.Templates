@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabBlazor.Templates.Server", "TabBlazor.Templates.Server\TabBlazor.Templates.Server.csproj", "{0A6B4F46-20AB-4359-BC91-DA22BEA26A37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabBlazor.Templates.Wasm", "TabBlazor.Templates.Wasm\TabBlazor.Templates.Wasm.csproj", "{511E4E09-1659-4C33-8CDB-70CFD02A383A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A6B4F46-20AB-4359-BC91-DA22BEA26A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A6B4F46-20AB-4359-BC91-DA22BEA26A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A6B4F46-20AB-4359-BC91-DA22BEA26A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511E4E09-1659-4C33-8CDB-70CFD02A383A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511E4E09-1659-4C33-8CDB-70CFD02A383A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511E4E09-1659-4C33-8CDB-70CFD02A383A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511E4E09-1659-4C33-8CDB-70CFD02A383A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
