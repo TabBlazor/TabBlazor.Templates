@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TabBlazor.Templates.Server/TabBlazor.Templates.Server.csproj" />
+  <Project Path="TabBlazor.Templates.Wasm/TabBlazor.Templates.Wasm.csproj" />
+</Solution>
